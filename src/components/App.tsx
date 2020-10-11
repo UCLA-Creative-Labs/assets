@@ -1,11 +1,13 @@
 import React from 'react';
-
+import Gallery from 'react-grid-gallery';
+import IMAGES from '../assets/images.json';
 import './styles/App.scss';
 
-function App(): React.Component {
+function App(): JSX.Element {
   return(
-    <div className="wrapper">
+    <div>
       <h1 className="text">Creative Labs Assets</h1>
+      <Gallery images={IMAGES}/>
     </div>
   );
 }
